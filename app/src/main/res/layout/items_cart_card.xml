@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:outlineProvider="background"
+    android:id="@+id/containerCar"
+    android:background="@drawable/back_filter"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="right"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/deleteFromCart"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+
+            android:layout_marginRight="10dp"
+            android:background="@drawable/refuse_btn"
+            android:fontFamily="@font/font_bold"
+            android:text="حذف"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_delete_black_24dp"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="title"
+            android:layout_weight="1"
+            android:id="@+id/titleCartItem"
+            android:textSize="24sp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/font_bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/ItemeCartImage"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+
+            android:src="@drawable/laundry"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightgray"
+
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_regular"
+                        android:gravity="center"
+                        android:text="Ironing"
+                        android:id="@+id/itemCartCount"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_bold"
+                        android:gravity="center"
+                        android:text="30 IQD"
+                        android:id="@+id/ItemCartPrice"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>

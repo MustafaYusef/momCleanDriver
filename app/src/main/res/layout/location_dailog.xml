@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+
+              android:layout_width="match_parent"
+        android:gravity="center"
+              android:background="@drawable/back_filter"
+              android:layout_height="wrap_content" android:layout_margin="10dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:fontFamily="@font/font_regular"
+        android:textSize="20sp"
+              android:padding="5dp"
+              android:text="الموقع"
+              android:gravity="center"
+              android:id="@+id/filterTitle"
+              android:textColor="@color/colorPrimaryDark"
+            />
+
+    <NumberPicker
+            android:id="@+id/filterPicker"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:background="@color/white"
+            android:descendantFocusability="blocksDescendants"
+            android:filterTouchesWhenObscured="false"
+            android:focusable="auto"
+            android:solidColor="@color/white"
+            android:theme="@style/NumberPickerText"
+            android:tooltipText="20sp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginTop="15dp"
+
+                  android:layout_marginLeft="10dp"
+                  android:weightSum="2"
+            android:gravity="center"
+                  android:layout_marginRight="10dp">
+<!--        <Button android:layout_width="match_parent" android:layout_height="wrap_content"-->
+<!--                android:text="خروج" android:fontFamily="@font/font_bold"-->
+<!--                android:textColor="@color/colorPrimaryDark"-->
+<!--                 android:layout_weight="1"-->
+
+<!--                android:textSize="20sp" android:gravity="center"-->
+<!--                app:cornerRadius="20dp"-->
+<!--                android:background="@drawable/round_btn_gray"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:id="@+id/closeDf" android:padding="5dp"-->
+<!--               />-->
+        <Button
+                android:id="@+id/applayFilter"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/font_bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:shadowColor="@color/black"
+                android:text="تم"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

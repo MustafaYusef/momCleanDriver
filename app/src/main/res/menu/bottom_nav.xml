@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mapFragment"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="الرئيسية"/>
+        <item
+       android:id="@+id/ordersFragment2"
+        android:icon="@drawable/ic_access_alarm_black_24dp"
+        android:title="قيد الأنتضار"/>
+        <item
+            android:id="@+id/ordersBusyFragment"
+            android:icon="@drawable/ic_hourglass_empty_black_24dp"
+            android:title="مشغولين"/>
+        <item
+            android:id="@+id/ordersResevedFragment"
+            android:icon="@drawable/ic_call_received_black_24dp"
+            android:title="تم أستلامها"/>
+        <item
+            android:id="@+id/ordersDeleverdFragment"
+            android:icon="@drawable/ic_store_black_24dp"
+            android:title="تم تسليمها الى المكتب"/>
+        <item
+            android:id="@+id/ordersCancelFragment"
+            android:icon="@drawable/ic_clear_black_24dp"
+            android:title="تم ألغائها"/>
+        <item
+            android:id="@+id/profileFragment2"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="الأعدادات"/>
+        <item
+            android:id="@+id/logOut"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="تسجيل الخروج"/>
+    </group>
+
+</menu>

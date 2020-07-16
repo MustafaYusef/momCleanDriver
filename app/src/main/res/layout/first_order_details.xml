@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="3dp"
+                android:id="@+id/location"
+                android:outlineProvider="background"
+                android:background="@drawable/back_filter"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pin" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/font_regular"
+            android:textSize="20dp"
+            android:id="@+id/clientName"
+            android:drawablePadding="5dp"
+            android:layout_margin="5dp"
+            android:text="اسم الزبون"
+            android:gravity="center|right"
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/font_regular"
+            android:textSize="20dp"
+            android:drawablePadding="5dp"
+           android:id="@+id/clientPhone"
+            android:text="اسم الزبون"
+            android:gravity="center|right"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray"/>
+</LinearLayout>

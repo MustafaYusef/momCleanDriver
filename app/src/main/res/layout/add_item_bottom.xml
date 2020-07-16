@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/back_bottom_sheet" android:gravity="center" android:layout_marginBottom="20dp"
+              android:paddingBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/ironAndWachBtn"
+
+                android:layout_weight="1"
+                android:background="@drawable/round_btn4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageIronAndWach"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_local_laundry_service_white_24dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_regular"
+                        android:gravity="center"
+                        android:id="@+id/ironAndWachText"
+                        android:text="غسل و كوي"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/ironWashPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_bold"
+                        android:gravity="center"
+                        android:text="30 IQD"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/lightgray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/wait_btn"
+                android:id="@+id/ironBtn"
+
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+               >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageIron"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_ironing" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_regular"
+                        android:gravity="center"
+                        android:text="كوي"
+                        android:id="@+id/ironText"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_bold"
+                        android:gravity="center"
+                        android:text="30 IQD"
+                        android:id="@+id/WashPrice"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/subCountBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/wait_btn"
+            android:textColor="@color/colorAccent"
+            android:text="-"
+            android:textSize="33sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="26sp"
+            android:id="@+id/itemCountText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="7"/>
+        <Button
+            android:id="@+id/plusCountBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/wait_btn"
+            android:textColor="@color/colorAccent"
+
+            android:text="+"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/addItemToCartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/round_btn4"
+        android:textColor="@color/white"
+        android:fontFamily="@font/font_bold"
+        android:text="إضافة للسلة"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>

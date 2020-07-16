@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="@color/gray"
+            android:gravity="center">
+            <Button
+                android:layout_width="130dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/font_regular"
+                android:textSize="16sp"
+                android:elevation="5dp"
+                android:outlineProvider="background"
+                android:text="الطلبات"
+                android:id="@+id/normalOrder"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_btn4"/>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgray"
+                android:fontFamily="@font/font_regular"
+                android:textSize="16sp"
+                android:text="الأشتراكات"
+                android:elevation="5dp"
+                android:outlineProvider="background"
+                android:id="@+id/packageOrder"
+                android:layout_margin="10dp"
+                android:background="@drawable/back_text"/>
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/OrdersScroll"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/ordersList"
+                android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</FrameLayout>

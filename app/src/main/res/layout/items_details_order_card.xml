@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:outlineProvider="background"
+    android:id="@+id/containerCar"
+    android:background="@drawable/back_filter"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layoutDirection="ltr"
+        android:gravity="right"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="title"
+                android:layout_weight="1"
+                android:id="@+id/titleOrderItem"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/font_bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="title"
+                android:layout_weight="1"
+                android:id="@+id/countOrderItem"
+                android:textSize="18sp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/font_bold"
+                android:textColor="@color/colorAccent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/ItemeOrderImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:src="@drawable/laundry"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+</LinearLayout>

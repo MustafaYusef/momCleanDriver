@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.cart.cartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="@color/gray"
+            android:gravity="center">
+        <Button
+            android:layout_width="130dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/font_regular"
+            android:textSize="16sp"
+            android:text="السلة"
+            android:id="@+id/normalCart"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_btn4"/>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgray"
+                android:fontFamily="@font/font_regular"
+                android:textSize="16sp"
+                android:text="الأشتراكات"
+                android:id="@+id/packageCart"
+                android:layout_margin="10dp"
+                android:background="@drawable/back_text"/>
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/itemsCartScroll"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/ItemsListCart"
+                android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:elevation="5dp"
+            android:outlineProvider="background"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:text="price"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="30dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/font_bold"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/priceCart"
+                android:layout_height="wrap_content"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ProgressBar
+                    android:id="@+id/ProgBuyCart"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuyCartBtn"
+                    app:layout_constraintEnd_toEndOf="@+id/BuyCartBtn"
+                    app:layout_constraintStart_toStartOf="@+id/BuyCartBtn"
+                    app:layout_constraintTop_toTopOf="@+id/BuyCartBtn" />
+                <Button
+                    android:id="@+id/BuyCartBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_btn4"
+                    android:fontFamily="@font/font_bold"
+                    android:text="شراء العرض"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:id="@+id/containerCar"
+    android:background="@drawable/back_filter"
+    android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1"
+      android:layoutDirection="ltr"
+      android:gravity="right"
+      android:orientation="horizontal">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="right|center"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:gravity="left">
+
+              <ImageButton
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginBottom="5dp"
+                  android:elevation="3dp"
+                  android:padding="4dp"
+                  android:id="@+id/locationOrder"
+                  android:outlineProvider="background"
+                  android:background="@drawable/back_filter"
+                  android:scaleType="centerCrop"
+                  android:src="@drawable/pin" />
+          </LinearLayout>
+          <TextView
+              android:layout_width="wrap_content"
+              android:gravity="center"
+              android:text="طلب اعتيادي"
+              android:id="@+id/titleOrder"
+              android:textSize="20sp"
+              android:padding="10dp"
+              android:fontFamily="@font/font_bold"
+              android:textColor="@color/colorPrimary"
+              android:layout_height="wrap_content"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="right">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingRight="10dp"
+                  android:gravity="right">
+
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:gravity="center"
+                      android:text="العدد: "
+                      android:textSize="16sp"
+                      android:id="@+id/OrderCount"
+
+                      android:fontFamily="@font/font_regular"
+                      android:textColor="@color/darkgray"
+                      android:layout_height="wrap_content"/>
+              </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left">
+    <Button
+        android:id="@+id/priceOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/back_text"
+        android:drawableLeft="@drawable/ic_money"
+        android:fontFamily="@font/font_regular"
+
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:text="16"
+        android:textColor="@color/darkgray"
+        android:textSize="16sp" />
+</LinearLayout>
+
+
+
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+
+        android:id="@+id/imageOrder"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|top"
+        android:layout_margin="10dp"
+        android:src="@drawable/image4" />
+</LinearLayout>
+
+
+
+
+
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="5dp"
+        android:background="@color/darkgray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="5dp"
+        android:weightSum="2"
+
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="right|center"
+            android:text="تم استلامها"
+            android:layout_weight="1"
+
+            android:id="@+id/recevedClient"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_call_received_black_24dp"
+            android:fontFamily="@font/font_regular"
+
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="right|center"
+            android:text="أرسال ألى المكتب"
+            android:layout_weight="1"
+
+            android:visibility="gone"
+            android:id="@+id/deleverdToOffice"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_store_black_24dp"
+            android:fontFamily="@font/font_regular"
+
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="الزبون مشغول"
+            android:layout_weight="1"
+            android:id="@+id/busyClient"
+
+            android:textSize="18sp"
+
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_hourglass_empty_black_24dp"
+            android:fontFamily="@font/font_regular"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>

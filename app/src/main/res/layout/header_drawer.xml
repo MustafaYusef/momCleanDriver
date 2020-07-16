@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/drwarImage"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center|top"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_person_black_24dp"
+            app:civ_border_color="@color/lightgray"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/SelectPhotoU"
+            app:layout_constraintEnd_toEndOf="@+id/SelectPhotoU"
+            app:layout_constraintStart_toStartOf="@+id/SelectPhotoU"
+            app:layout_constraintTop_toTopOf="@+id/SelectPhotoU" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center|right"
+            android:textSize="20sp"
+            android:fontFamily="@font/font_bold"
+            android:text="اسم السائق"
+            android:textColor="@color/darkgray"
+            android:id="@+id/driverTitle"
+            />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/lightgray"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"/>
+</LinearLayout>
